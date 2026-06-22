@@ -3042,6 +3042,33 @@ tile=dict(
 
 generate_onnx_single_operator(tile, "tile")
 
+# Tile-1 (opset 1) form: 3 inputs (input, tiles, axis). A negative axis is
+# valid here and is normalized against the input rank; before the bound was
+# added the parser indexed the repeats buffer with the raw axis.
+def generate_tile_neg_axis(name="tile_neg_axis"):
+    inp = np.random.randn(2, 3, 4, 5).astype(np.float32)
+    tiles = np.array([3], dtype=np.int64)
+    axis = np.array([-1], dtype=np.int64)
+
+    reps = [1] * inp.ndim
+    reps[int(axis[0])] = int(tiles[0])
+    out = np.tile(inp, reps)
+
+    X = onnx.helper.make_tensor_value_info("input", TensorProto.FLOAT, list(inp.shape))
+    Y = onnx.helper.make_tensor_value_info("output", TensorProto.FLOAT, list(out.shape))
+    tiles_init = onnx.helper.make_tensor("tiles", TensorProto.INT64, [1], tiles)
+    axis_init = onnx.helper.make_tensor("axis", TensorProto.INT64, [1], axis)
+    node = onnx.helper.make_node("Tile", inputs=["input", "tiles", "axis"], outputs=["output"])
+    graph = onnx.helper.make_graph([node], name, [X], [Y], [tiles_init, axis_init])
+    model = onnx.helper.make_model(graph, producer_name="github.com/opencv/opencv_extra",
+                                   opset_imports=[onnx.helper.make_opsetid("", 1)])
+    onnx.checker.check_model(model)
+    onnx.save(model, "models/{}.onnx".format(name))
+    np.save("data/input_{}.npy".format(name), inp)
+    np.save("data/output_{}.npy".format(name), np.ascontiguousarray(out))
+
+generate_tile_neg_axis()
+
 def gen_layer_norm_expanded(input_shape=[1, 4, 5], axis=-1, constant_as_initializers=False):
     X = onnx.helper.make_tensor_value_info("X", onnx.TensorProto.FLOAT, input_shape)
     Y = onnx.helper.make_tensor_value_info("Y", onnx.TensorProto.FLOAT, input_shape)
