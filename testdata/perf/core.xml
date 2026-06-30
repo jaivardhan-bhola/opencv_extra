@@ -78038,4 +78038,60 @@
       <x>0</x>
       <y>111</y>
       <val>13911731.</val></rng2></dst></GemmTest_gemmN1--gemmN1----256--1--256---32FC1--0->
+ <!-- resumed -->
+
+<Size_MatType_addWeighted--addWeighted---640x480--32FC1->
+  <dst>
+    <kind>65536</kind>
+    <type>5</type>
+    <min>-15766.0556640625</min>
+    <max>15954.1240234375</max>
+    <last>
+      <x>639</x>
+      <y>479</y>
+      <val>11043.12109375</val></last>
+    <rng1>
+      <x>417</x>
+      <y>149</y>
+      <val>9439.875</val></rng1>
+    <rng2>
+      <x>446</x>
+      <y>46</y>
+      <val>14583.689453125</val></rng2></dst></Size_MatType_addWeighted--addWeighted---640x480--32FC1->
+<Size_MatType_addWeighted--addWeighted---1280x720--32FC1->
+  <dst>
+    <kind>65536</kind>
+    <type>5</type>
+    <min>-15765.435546875</min>
+    <max>15959.6044921875</max>
+    <last>
+      <x>1279</x>
+      <y>719</y>
+      <val>-1520.5001220703125</val></last>
+    <rng1>
+      <x>648</x>
+      <y>678</y>
+      <val>5210.1181640625</val></rng1>
+    <rng2>
+      <x>350</x>
+      <y>336</y>
+      <val>2185.14013671875</val></rng2></dst></Size_MatType_addWeighted--addWeighted---1280x720--32FC1->
+<Size_MatType_addWeighted--addWeighted---1920x1080--32FC1->
+  <dst>
+    <kind>65536</kind>
+    <type>5</type>
+    <min>-15765.1337890625</min>
+    <max>15966.8427734375</max>
+    <last>
+      <x>1919</x>
+      <y>1079</y>
+      <val>3939.867431640625</val></last>
+    <rng1>
+      <x>295</x>
+      <y>964</y>
+      <val>6952.66796875</val></rng1>
+    <rng2>
+      <x>44</x>
+      <y>28</y>
+      <val>3117.43896484375</val></rng2></dst></Size_MatType_addWeighted--addWeighted---1920x1080--32FC1->
 </opencv_storage>
