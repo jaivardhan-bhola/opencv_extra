@@ -483,8 +483,8 @@ models = [
         filename='openpose_pose_mpi.caffemodel'),
     Model(
         name='YOLOv3 (ONNX)',
-        url='https://huggingface.co/qualcomm/Yolo-v3/resolve/226ada6de9dcb32eebad7f74bf526714e2af6136/Yolo-v3.onnx',
-        sha='c37641ddf05cfe133efd4b66832f269d95f523cf',
+        url='https://huggingface.co/opencv/opencv_contribution/resolve/main/yolov3/yolov3.onnx',
+        sha='2b433d879f318efa55de62a630556162665c6d8e',
         filename='yolov3.onnx'),
     Model(
         name='OpenPose/pose/coco (ONNX)',  # converted from caffemodel via opencv_extra/caffe_to_onnx/openpose_models.py
