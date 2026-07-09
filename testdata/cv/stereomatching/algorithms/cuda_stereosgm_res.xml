@@ -45,7 +45,7 @@
     <!-- RMS -->
     <borderedAllRMS>1.3612003326416016e+00</borderedAllRMS>
     <borderedNoOcclRMS>9.7067892551422119e-01</borderedNoOcclRMS>
-    <borderedOcclRMS>1.2544354438781738e+01</borderedOcclRMS>
+    <borderedOcclRMS>1.2864156e+01</borderedOcclRMS>
     <borderedTexturedRMS>1.0897301435470581e+00</borderedTexturedRMS>
     <borderedTexturelessRMS>8.6361491680145264e-01</borderedTexturelessRMS>
     <borderedDepthDiscontRMS>2.8932495117187500e+00</borderedDepthDiscontRMS>
@@ -65,7 +65,7 @@
     <!-- RMS -->
     <borderedAllRMS>1.4238278865814209e+00</borderedAllRMS>
     <borderedNoOcclRMS>1.0155887603759766e+00</borderedNoOcclRMS>
-    <borderedOcclRMS>1.3118205070495605e+01</borderedOcclRMS>
+    <borderedOcclRMS>1.3395398e+01</borderedOcclRMS>
     <borderedTexturedRMS>1.2021181583404541e+00</borderedTexturedRMS>
     <borderedTexturelessRMS>8.3679813146591187e-01</borderedTexturelessRMS>
     <borderedDepthDiscontRMS>2.8878693580627441e+00</borderedDepthDiscontRMS>
@@ -285,7 +285,7 @@
     <!-- RMS -->
     <borderedAllRMS>1.9401514530181885e+00</borderedAllRMS>
     <borderedNoOcclRMS>1.3675466775894165e+00</borderedNoOcclRMS>
-    <borderedOcclRMS>1.0363769531250000e+01</borderedOcclRMS>
+    <borderedOcclRMS>1.0618650e+01</borderedOcclRMS>
     <borderedTexturedRMS>1.4010603427886963e+00</borderedTexturedRMS>
     <borderedTexturelessRMS>1.3376919031143188e+00</borderedTexturelessRMS>
     <borderedDepthDiscontRMS>3.0267965793609619e+00</borderedDepthDiscontRMS>
