@@ -485,7 +485,7 @@ models = [
         name='YOLOv3 (ONNX)',
         url='https://huggingface.co/opencv/opencv_contribution/resolve/main/yolov3/yolov3.onnx',
         sha='2b433d879f318efa55de62a630556162665c6d8e',
-        filename='yolov3.onnx'),
+        filename='yolov3-converted.onnx'),
     Model(
         name='OpenPose/pose/coco (ONNX)',  # converted from caffemodel via opencv_extra/caffe_to_onnx/openpose_models.py
         url='https://github.com/omrope79/opencv-test-models/releases/download/v1.3.0/openpose_pose_coco.onnx',
