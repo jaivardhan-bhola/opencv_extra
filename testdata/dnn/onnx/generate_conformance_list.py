@@ -24,8 +24,12 @@ def dump_test_list():
         test_path = os.path.join(NODE_DIR, test_name)
 
         assert os.path.isdir(test_path), 'node folder should contain only directories'
-        children = sorted([x for x in os.listdir(test_path)])
-        assert children == [MODEL_NAME, DATA_DIR], 'test folder should contain model and one dataset'
+        children = set(os.listdir(test_path))
+        # Most tests are exactly {model.onnx, test_data_set_0}. Newer exotic-dtype
+        # tests (FP8/FP4/INT4/E8M0 cast/quant) also ship loose top-level .npy
+        # references alongside; tolerate those extra files.
+        assert MODEL_NAME in children and DATA_DIR in children, \
+            'test folder must contain model.onnx and test_data_set_0'
 
         data_prefix = os.path.join(DATA_DIR)
         dataset_path = os.path.join(test_path, DATA_DIR)
