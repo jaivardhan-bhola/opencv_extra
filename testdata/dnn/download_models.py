@@ -1449,6 +1449,78 @@ models = [
         url='https://github.com/fabio-sim/LightGlue-ONNX/releases/download/v0.1.0/disk.onnx',
         sha='5f6a9069aed0af7302b67dcfb6d24b0d46707aec',
         filename='disk.onnx'),
+    Model(
+        name='PaddleOCR-VL vision_encoder.onnx',
+        url='https://huggingface.co/onnx-community/PaddleOCR-VL-1.5-ONNX/resolve/371b52d142968ff09e9cb5275a75eae55aa27a96/onnx/vision_encoder.onnx',
+        sha='6ad90de3405d2c38c6349117d270b41957baad3d',
+        filename='llm/paddleocr_vl/onnx/vision_encoder.onnx',
+        large=True),
+    Model(
+        name='PaddleOCR-VL vision_encoder.onnx.data',
+        url='https://huggingface.co/onnx-community/PaddleOCR-VL-1.5-ONNX/resolve/371b52d142968ff09e9cb5275a75eae55aa27a96/onnx/vision_encoder.onnx.data',
+        sha='d7d18ac8e90b0fd93d2670ac9333b00918f02f8d',
+        filename='llm/paddleocr_vl/onnx/vision_encoder.onnx.data',
+        large=True),
+    Model(
+        name='PaddleOCR-VL embedding.onnx',
+        url='https://huggingface.co/onnx-community/PaddleOCR-VL-1.5-ONNX/resolve/371b52d142968ff09e9cb5275a75eae55aa27a96/onnx/embedding.onnx',
+        sha='540507890635ba8ddfbdb64812c355931218eb27',
+        filename='llm/paddleocr_vl/onnx/embedding.onnx',
+        large=True),
+    Model(
+        name='PaddleOCR-VL embedding.onnx.data',
+        url='https://huggingface.co/onnx-community/PaddleOCR-VL-1.5-ONNX/resolve/371b52d142968ff09e9cb5275a75eae55aa27a96/onnx/embedding.onnx.data',
+        sha='f54a392a44c294f6e320d4d92bc961c6bf13cb4b',
+        filename='llm/paddleocr_vl/onnx/embedding.onnx.data',
+        large=True),
+    Model(
+        name='PaddleOCR-VL decoder.onnx',
+        url='https://huggingface.co/onnx-community/PaddleOCR-VL-1.5-ONNX/resolve/371b52d142968ff09e9cb5275a75eae55aa27a96/onnx/decoder.onnx',
+        sha='703b5d91709126f6da678ce91915cf15b064b486',
+        filename='llm/paddleocr_vl/onnx/decoder.onnx',
+        large=True),
+    Model(
+        name='PaddleOCR-VL decoder.onnx.data',
+        url='https://huggingface.co/onnx-community/PaddleOCR-VL-1.5-ONNX/resolve/371b52d142968ff09e9cb5275a75eae55aa27a96/onnx/decoder.onnx.data',
+        sha='7e7b8f8dc3826d996aa7d03afd18b401bcdadf17',
+        filename='llm/paddleocr_vl/onnx/decoder.onnx.data',
+        large=True),
+    Model(
+        name='Granite-Docling vision_encoder.onnx',
+        url='https://huggingface.co/onnx-community/granite-docling-258M-ONNX/resolve/e8602580df77443fc3421cf3bae0601da601e5c6/onnx/vision_encoder.onnx',
+        sha='c9453e8cf5c50baf2fca1f12f1f821ed0ca0c553',
+        filename='llm/granite/onnx/vision_encoder.onnx',
+        large=True),
+    Model(
+        name='Granite-Docling vision_encoder.onnx_data',
+        url='https://huggingface.co/onnx-community/granite-docling-258M-ONNX/resolve/e8602580df77443fc3421cf3bae0601da601e5c6/onnx/vision_encoder.onnx_data',
+        sha='4d107590e4283150efef5c5a7eea54fc97d959e8',
+        filename='llm/granite/onnx/vision_encoder.onnx_data',
+        large=True),
+    Model(
+        name='Granite-Docling embed_tokens.onnx',
+        url='https://huggingface.co/onnx-community/granite-docling-258M-ONNX/resolve/e8602580df77443fc3421cf3bae0601da601e5c6/onnx/embed_tokens.onnx',
+        sha='e3b886fdccf572135f06e693c66c65b3932b8c7e',
+        filename='llm/granite/onnx/embed_tokens.onnx',
+        large=True),
+    Model(
+        name='Granite-Docling embed_tokens.onnx_data',
+        url='https://huggingface.co/onnx-community/granite-docling-258M-ONNX/resolve/e8602580df77443fc3421cf3bae0601da601e5c6/onnx/embed_tokens.onnx_data',
+        sha='62af8df492dd0394823cb1055c421779c7722859',
+        filename='llm/granite/onnx/embed_tokens.onnx_data',
+        large=True),
+    Model(
+        name='Granite-Docling decoder_model_merged.onnx',
+        url='https://huggingface.co/onnx-community/granite-docling-258M-ONNX/resolve/e8602580df77443fc3421cf3bae0601da601e5c6/onnx/decoder_model_merged.onnx',
+        sha='b99b97042550231bf5bd32a14f5e94bd9add78c6',
+        filename='llm/granite/onnx/decoder_model_merged.onnx',
+        large=True),
+    Model(
+        name='Granite-Docling decoder_model_merged.onnx_data',
+        url='https://huggingface.co/onnx-community/granite-docling-258M-ONNX/resolve/e8602580df77443fc3421cf3bae0601da601e5c6/onnx/decoder_model_merged.onnx_data',
+        sha='fdb8b123e1856321e215bbaad47543e672c65cda',
+        filename='llm/granite/onnx/decoder_model_merged.onnx_data',
+        large=True),
 ]
 
 # Note: models will be downloaded to current working directory
